@@ -1,0 +1,97 @@
+header {
+	background: url(../assets/images/heroImage.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 820px;
+	padding-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+nav {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}
+
+.navLinks .hamburger {
+	display: none;
+}
+
+.navLinks, .logo, .navFunctions {
+	display: flex;
+	list-style-type: none;
+	width: 33.3%;
+	padding: 0;
+	li {
+		margin-left: 20px;
+	}
+}
+
+.navLinks li {
+	margin-right: 0;
+	margin-left: 40px;
+}
+
+.navLinks li:first-child {
+	// display: none;
+}
+
+.navFunctions {
+	justify-content: flex-end;
+}
+
+.logo {
+	width: 120px;
+	img {
+		max-width: 100%;
+	}
+}
+
+.headerShopButton {
+	width: 180px;
+	height: 60px;
+	background: #F07F84;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p {
+		color: #fff;
+		font-size: 16px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+// BUTTONS
+.headerButtons {
+	position: absolute;
+	bottom: 15px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	width: 10%;
+}
+
+.sliderNavButtons {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #141122;
+	&:hover {
+		background-color: #88868F;
+	}
+}

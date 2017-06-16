@@ -1,0 +1,51 @@
+// COLORS
+$darkGrey: #1E1E2A;
+$lightGrey: #888890;
+$mintGreen: #A8EDEA;
+$pink: #ff9a9e;
+$turquoise: #79dad6;
+$peach: #f6b895;
+
+// FONT STACK
+
+
+// MEDIA QUERY BREAKPOINTS
+$breakpointDesktop: 1170px;
+$breakpointTablet: 768px;
+$breakpointPhone: 480px;
+
+
+
+// MIXINS
+@mixin infoButton($buttonColor) {
+	background: $buttonColor;
+	border-radius: 45%;
+	font-size: 10px;
+	color: #fefeff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 8;
+}
+
+@mixin subInfoButton($buttonColor) {
+	background: $buttonColor;
+	border-radius: 45%;
+	font-size: 10px;
+	color: #fefeff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	position: absolute;
+	top: 35px;
+	right: 5px;
+	z-index: 8;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}

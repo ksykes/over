@@ -1,0 +1,100 @@
+.testimonialsVideoSection {
+	margin: 100px 0;
+	display: flex;
+}
+
+.testimonials, .video {
+	width: 50%;
+	// float: left;
+	// padding: 10% 120px;
+}
+
+.testimonials {
+	background: url("../assets/images/ShapeBG.png");
+	background-size: cover;
+	h3 {
+		padding-top: 98px;
+	}
+	img {
+		margin: 25px auto;
+		display: block;
+	}
+	p {
+		text-align: center;
+		font-style: italic;
+	}
+	p.customer {
+		padding-bottom: 98px;
+		margin: 0;
+	}
+}
+
+.customerName::after {
+	content: " . ";
+}
+
+// BUTTONS
+
+.testimonials .wrapper {
+	position: relative;
+}
+
+.videoButtons {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	// align-content: center;
+	align-items: center;
+	width: 30%;
+}
+
+.testimonialSliderButtons {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #888890;
+	padding: 0 20px;
+	&:hover {
+		width: 60px;
+		height: 60px;
+		padding: 0 10px;
+	}
+}
+
+// VIDEO
+
+.video {
+	background: 
+		linear-gradient(
+			rgba(26, 26, 38, 0.5), 
+			rgba(26, 26, 38, 0.5)
+		),
+		url("../assets/images/videoPlaceholder.jpg");
+	background-size: cover;
+}
+
+.videoOverlay {
+	p {
+		font-size: 16px;
+		color: #fff;
+		text-transform: uppercase;
+		padding-bottom: 98px;
+	}
+	p.plantBackground {
+		font-family: "PressStyle", "Helvetica Condensed", sans-serif;
+		font-style: normal;
+		font-size: 98px;
+		color: #fff;
+		text-transform: uppercase;
+		margin: 20px 0;
+	}
+}
+
+.playButton {
+	text-align: center;
+	padding-top: 98px;
+}

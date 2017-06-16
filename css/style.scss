@@ -1,0 +1,32 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/intro";
+@import "partials/products";
+@import "partials/testimonialsVideo";
+@import "partials/blog";
+@import "partials/newsletterLogos";
+@import "partials/subNav";
+
+
+// GLOBAL
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	font-size: 62.5%;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.divider {
+	width: 100%;
+	background: #e6e5e1;
+	height: 2px;
+}
+
+
+@import "partials/mediaQueries";

@@ -1,0 +1,226 @@
+@font-face {
+	font-family: "PressStyle";
+	font-style: normal;
+	src: url("../assets/fonts/PressStyle.otf");
+}
+
+// GLOBAL
+body {
+	font-family: "Poppins";
+	font-weight: 400;
+}
+h2 {
+	color: #1D1D29;
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 60px;
+	text-align: center;
+}
+
+h3 {
+	color: $darkGrey;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 80px;
+	text-align: center;
+	margin: 0;
+}
+
+p {
+	font-family: "Poppins";
+	color: $darkGrey;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.popularProducts, .blogSection, .newsletter {
+	h3::after {
+		content: "";
+		background: linear-gradient(to right, $mintGreen 0%, $mintGreen 30%, lightgray 30%, lightgray 70%, $mintGreen 70%, $mintGreen 100%);
+		width: 120px;
+		height: 2px;
+		display: block;
+		margin: auto;
+	}
+}
+
+h4 {
+	font-size: 32px;
+	color: $lightGrey;
+	line-height: 60px;
+	text-align: center;
+}
+
+h5 {
+	color: #1A1A26;
+	font-size: 24px;
+}
+
+h6 {
+	color: #1A1A26;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+p {
+	font-size: 14px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+// HEADER
+nav a {
+	color: #1a1a26;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 60px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		color: $lightGrey;
+	}
+}
+
+// INTRODUCTION
+.introText {
+	h6 {
+		color: $mintGreen;
+		// line-height: 60px;
+		text-align: center;
+		margin: 0;
+	}
+	h3 {
+		margin: 0 0 80px 0;
+	}
+	p {
+		text-align: center;
+		color: $lightGrey;
+		font-size: 14px;
+	}
+	.emphasizedText::after {
+		content: " . ";
+	}
+}
+
+.emphasizedText {
+	color: $darkGrey;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 60px;
+	text-transform: uppercase;
+}
+
+.introImage p:nth-child(1) {
+	color: $darkGrey;
+	font-size: 24px;
+	margin: 0;
+	padding: 10px 15px;
+}
+
+.introImage p:nth-child(2) {
+	color: $lightGrey;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 15px;
+}
+
+// POPULAR PRODUCTS
+.popularProducts li {
+	list-style: none;
+	display: inline-block;
+	margin: 30px 0;
+	a {
+		color: $darkGrey;
+		text-decoration: none;
+		font-size: 18px;
+		margin-right: 60px;
+		text-align: center;
+		&:hover {
+			border-bottom: 1px solid black;
+		}
+	}
+}
+
+.popularProducts li:last-child a {
+	margin-right: 0;
+}
+
+ul.productsLinks {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.galleryItem p {
+	text-align: center;
+	color: $darkGrey;
+	font-size: 14px;
+	width: 100%;
+}
+
+p.galleryItemPrice, p.galleryItemOriginalPrice {
+	font-size: 18px;
+	display: inline;
+}
+
+p.galleryItemOriginalPrice {
+	color: $lightGrey;
+	text-decoration: line-through;
+	font-size: 14px;
+	display: inline;
+	// margin-left: 15px;
+}
+
+.overlay {
+	position: relative;
+}
+
+.overlay p {
+	color: $lightGrey;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	background: #fff;
+	// display: inline;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	width: 60%;
+}
+
+// BLOG
+.blogGalleryItems p {
+	text-align: left;
+}
+
+// SUBNAV
+.subNav h5 {
+	font-size: 20px;
+}
+
+// PAYMENT OPTIONS
+.fa-cc-amex {
+	color: #3CB9EC;
+}
+
+.fa-cc-discover {
+	color: #FA7D00;
+}
+
+.fa-cc-visa {
+	color: #4F30B5;
+}
+
+.fa-cc-mastercard {
+	color: #F40000;
+}
+
+.fa-credit-card-alt {
+	color: #B5B5B5;
+}

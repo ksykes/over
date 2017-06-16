@@ -1,0 +1,317 @@
+@media (max-width: $breakpointDesktop) {
+	body {
+		background: red;
+	}
+
+	.wrapper {
+		margin: 0 50px;
+	}
+
+	.navItems {
+		display: none;
+	}
+
+	.navLinks .hamburger {
+		display: block;
+		margin-left: 0;
+	}
+
+	// .navLinks li.hamburger {
+	// 	display: block;
+	// }
+
+	.sponsorLogo {
+		margin-right: 40px;
+		// width: calc(100% - 240px);
+		// &:last-of-type {
+		// 	padding-right: 0;
+		// }
+	}
+
+	.subNav {
+		h5 {
+			font-size: 16px;
+		}
+		p, li a, .contactInfo li {
+			font-size: 12px;
+		}
+		.services li a, .account li a {
+			line-height: 14px;
+		}
+		.socialLinks li, .paymentOptions li {
+			font-size: 16px;
+		}
+	}
+
+	// VIDEO
+	.testimonialsVideoSection {
+		display: block;
+	}
+
+	.testimonials, .video {
+		width: 100%;
+	}
+}
+
+@media (max-width: $breakpointTablet) {
+	body {
+		background: green;
+	}
+
+	.navItems {
+		display: none;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	// FOOTER
+	.companyInfo {
+		width: 100%;
+	}
+
+	.services, .account {
+		width: calc(50% - 10px);
+	}
+
+	.instagram {
+		width: 100%;
+	}
+
+	.instagramGallery li {
+		// flex: none;
+	}
+
+	// INTRO
+	.introImage p:nth-child(1) {
+		font-size: 16px;
+		line-height: 18px;
+	}
+
+	.introImage p:nth-child(2) {
+		font-size: 14px;
+		line-height: 16px;
+		padding-top: 0;
+	}
+
+	.gallery {
+		flex-wrap: wrap;
+		// height: 50px;
+	}
+
+	.introImageGroup1 {
+		width: 100%;
+		height: 258px;
+		overflow: hidden;
+		position: relative;
+		img {
+			// height: 50%;
+			position: absolute;
+			bottom: -210px;
+			width: 100%;
+		}
+	}
+
+	.introImageGroup2 {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.introImageGroup3 {
+		margin-bottom: 15px;
+		.introImage:first-child {
+			margin-right: 15px;
+		}
+	}
+
+	// POPULAR PRODUCTS
+	.popularProducts li a {
+		margin-right: 30px;
+	}
+
+	.galleryItem p {
+		font-size: 12px;
+	}
+
+	.popularProducts li.galleryItem {
+		flex: 0 1 25%;
+	}
+
+	// TESTIMONIALS AND VIDEO
+	.testimonialsVideoSection {
+		flex-wrap: wrap;
+	}
+
+	.testimonials, .video {
+		width: 100%;
+	}
+
+	// BLOG
+	.blogGalleryItems h6 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: $breakpointPhone) {
+	body {
+		background: blue;
+	}
+
+	.wrapper {
+		margin: 0 5%;
+	}
+
+	h3 {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	header {
+		height: 700px;
+	}
+
+	.navLinks {
+		display: none;
+	}
+
+	// INTRO
+	.intro {
+		margin-top: 50px;
+	}
+
+	.introText h3 {
+		margin-bottom: 20px;
+	}
+
+	.gallery {
+		margin: 20px 0;
+	}
+
+	.introImageGroup1 {
+		height: 100px;
+		img {
+			bottom: -70px;
+		}
+	}
+
+	.introImageGroup4 {
+		align-items: flex-start;
+	}
+
+	// PRODUCTS
+	.popularProducts {
+		margin-top: 50px;
+	}
+
+	ul.productsLinks {
+		margin: 15px 0;
+		li {
+			display: block;
+			margin: 5px 0;
+			a {
+				margin: 0 0;
+			}
+		}
+	}
+
+	.popularProducts li.galleryItem {
+		margin: 0 5px 15px 5px;
+		flex: 0 1 40%;
+	}
+
+	// BLOG
+	.blogSection {
+		margin-bottom: 50px;
+	}
+
+	ul.blogGallery {
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.blogGalleryItems {
+		width: 100%;
+		margin-right: 0;
+		h6 {
+			margin-top: 10px;
+		}
+		p.readMore {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+	}
+
+	// SPONSORS
+	.logoSection {
+		margin-bottom: 50px;
+	}
+
+	.logos {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.sponsorLogo {
+		flex: 0 1 30%;
+		margin-right: 0;
+		padding-bottom: 20px;
+	}
+
+	// SUBNAV
+	.subNav {
+		margin: 50px 0;
+	}
+
+	.companyInfo ul.socialLinks {
+		font-size: 30px;
+		text-align: center;
+		margin: 15px 0;
+	}
+
+	.services, .account {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.servicesList, .accountList {
+		display: none;
+		text-align: center;
+	}
+
+	.instagram h5 {
+		display: none;
+	}
+
+	ul.instagramGallery {
+		// justify-content: space-around;
+		li {
+			flex: 0 1 30%;
+			padding-bottom: 10px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.paymentOptions {
+		display: none;
+	}
+
+	.footerContent {
+		display: block;
+		p {
+			width: 100%;
+			font-size: 12px;
+			&:last-child {
+				text-align: left;
+			}
+		}
+	}
+
+	// VIDEO
+	.videoOverlay p.plantBackground {
+		font-size: 68px;
+		padding-bottom: 20px;
+	}
+}

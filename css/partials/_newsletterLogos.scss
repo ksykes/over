@@ -1,0 +1,65 @@
+// NEWSLETTER
+.newsletter {
+	h3 {
+		margin: 0 0 40px 0;
+	}
+	p {
+		text-align: center;
+		color: $lightGrey;
+	}
+}
+
+.newsletterForm {
+	margin-top: 45px;
+}
+
+label {
+	display: none;
+}
+
+.submitField {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+input[type=email] {
+	width: 100%;
+	padding-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid #E6E5E1;
+}
+
+button {
+	background: url(../assets/images/);
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+}
+
+// LOGOS
+.logoSection {
+	margin: 100px 0;
+}
+
+.logos {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: center;
+}
+
+.sponsorLogo {
+	margin-right: 125px;
+	flex: 0 1 20%;
+	img {
+		max-width: 100%;
+	}
+}
+
+.sponsorLogo:last-of-type {
+	margin-right: 0;
+}

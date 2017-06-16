@@ -1,0 +1,37 @@
+.blogSection {
+	margin: 100px 0;
+}
+
+ul.blogGallery {
+	list-style: none;
+	padding: 0;
+	margin: 60px 0 100px 0;
+	display: flex;
+}
+
+.blogGalleryItems {
+	width: 33.3%;
+	margin-right: 15px;
+	&:last-child {
+		margin-right: 0;
+	}
+	p {
+		color: $lightGrey;
+		font-size: 14px;
+		margin: 20px 0 0 0;
+	}
+	p.readMore {
+		color: $darkGrey;
+		border-bottom: 1px solid $darkGrey;
+		display: inline-block;
+		margin: 30px 0 0 0;
+	}
+	h6 {
+		font-size: 18px;
+		font-weight: 500;
+		margin: 25px 0 0 0;
+	}
+	img {
+		max-width: 100%;
+	}
+}
