@@ -1,8 +1,4 @@
 @media (max-width: $breakpointDesktop) {
-	body {
-		background: red;
-	}
-
 	.wrapper {
 		margin: 0 50px;
 	}
@@ -14,18 +10,30 @@
 	.navLinks .hamburger {
 		display: block;
 		margin-left: 0;
+		position: relative;
+		cursor: pointer;
 	}
 
-	// .navLinks li.hamburger {
-	// 	display: block;
-	// }
+	.hamburgerLinks {
+		position: absolute;
+		display: block;
+		padding: 1rem 2rem;
+		margin: 0;
+		width: 10rem;
+		background: white;
+		li {
+			list-style: none;
+			margin: 0;
+		}
+	}
+
+	.turnHamburger {
+		transition: 0.5s, 0.5s, 0.5s, 0.5s;
+		transform: rotate(90deg);
+	}
 
 	.sponsorLogo {
 		margin-right: 40px;
-		// width: calc(100% - 240px);
-		// &:last-of-type {
-		// 	padding-right: 0;
-		// }
 	}
 
 	.subNav {
@@ -51,13 +59,25 @@
 	.testimonials, .video {
 		width: 100%;
 	}
+
+	// FOOTER
+	.companyInfo {
+		margin-right: 0;
+		margin-bottom: 3rem;
+		padding-right: 2rem;
+		width: calc(50% - 20px);
+		border-right: 2px solid #e6e5e1;
+	}
+	.services, .account {
+		width: calc(25% - 20px);
+		padding-left: 2rem;
+	}
+	.instagram {
+		width: 100%;
+	}
 }
 
 @media (max-width: $breakpointTablet) {
-	body {
-		background: green;
-	}
-
 	.navItems {
 		display: none;
 	}
@@ -69,18 +89,24 @@
 	// FOOTER
 	.companyInfo {
 		width: 100%;
+		padding-right: 0;
+		border: none;
 	}
 
 	.services, .account {
 		width: calc(50% - 10px);
+		padding-left: 0;
+		margin-bottom: 3rem;
 	}
 
-	.instagram {
-		width: 100%;
-	}
-
-	.instagramGallery li {
-		// flex: none;
+	.footerContent {
+		display: block;
+		p {
+			width: 100%;
+			&:last-child {
+				text-align: left;
+			}
+		}
 	}
 
 	// INTRO
@@ -97,7 +123,6 @@
 
 	.gallery {
 		flex-wrap: wrap;
-		// height: 50px;
 	}
 
 	.introImageGroup1 {
@@ -105,8 +130,8 @@
 		height: 258px;
 		overflow: hidden;
 		position: relative;
+		margin-right: 0;
 		img {
-			// height: 50%;
 			position: absolute;
 			bottom: -210px;
 			width: 100%;
@@ -154,10 +179,6 @@
 }
 
 @media (max-width: $breakpointPhone) {
-	body {
-		background: blue;
-	}
-
 	.wrapper {
 		margin: 0 5%;
 	}
@@ -271,7 +292,7 @@
 
 	.services, .account {
 		text-align: center;
-		margin-bottom: 15px;
+		padding-right: 0;
 	}
 
 	.servicesList, .accountList {
@@ -284,7 +305,6 @@
 	}
 
 	ul.instagramGallery {
-		// justify-content: space-around;
 		li {
 			flex: 0 1 30%;
 			padding-bottom: 10px;

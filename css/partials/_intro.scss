@@ -10,6 +10,10 @@
 
 // GALLERY
 
+.gallery img {
+	display: block;
+}
+
 .introImage {
 	position: relative;
 	p:nth-child(1) {
@@ -21,7 +25,7 @@
 		line-height: 16px;
 	}
 	img {
-		max-width: 100%;
+		width: 100%;
 		overflow: hidden;
 	}
 }
@@ -33,6 +37,11 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	&:hover {
+		background: $turquoise;
+		border: 2px solid $lightGrey;
+		color: #fff;
+	}
 }
 
 // .gallery {
@@ -98,13 +107,19 @@
 .introImageGroup2 {
 	width: calc(60% - 2%);
 	// height: 550px;
-	overflow: hidden;
+	// overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
 }
 
 .introImageGroup3 {
 	width: calc(100%);
 	display: flex;
-	overflow: hidden;
+	// overflow: hidden;
+	justify-content: space-between;
+    align-content: space-between;
 	.introImage {
 		margin-bottom: 1%;
 		&:first-child {

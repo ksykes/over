@@ -6,15 +6,10 @@ $pink: #ff9a9e;
 $turquoise: #79dad6;
 $peach: #f6b895;
 
-// FONT STACK
-
-
 // MEDIA QUERY BREAKPOINTS
 $breakpointDesktop: 1170px;
 $breakpointTablet: 768px;
 $breakpointPhone: 480px;
-
-
 
 // MIXINS
 @mixin infoButton($buttonColor) {

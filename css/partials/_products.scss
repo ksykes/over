@@ -7,7 +7,6 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-between;
-	// align-items: center;
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
@@ -21,10 +20,6 @@
 	&:hover .overlay {
 		display: block;
 	}
-}
-
-.galleryItem:nth-child(5n) {
-	// margin-right: 0;
 }
 
 .galleryItem img {
@@ -46,6 +41,14 @@
 	background: rgba(26, 26, 38, 0.5);
 	z-index: 5;
 	display: none;
+	p {
+		border: 1.5px solid white;
+		&:hover {
+			border: 1.5px solid $darkGrey;
+			color: black;
+			background: $turquoise;
+		}
+	}
 }
 
 // AFTER EFFECT

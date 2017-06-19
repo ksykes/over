@@ -4,7 +4,6 @@
 		border-bottom: 2px solid #a8edea;
 		display: inline-block;
 		margin: 0;
-		// line-height: 24px;
 	}
 }
 
@@ -49,11 +48,19 @@
 .socialLinks li {
 	display: inline-block;
 	font-size: 24px;
+	padding-right: 1.5rem;
+	a {
+		color: black;
+		text-decoration: none;
+		&:hover {
+			color: $lightGrey;
+		}
+	}
 }
 
 .services, .account {
 	width: calc(15% - 20px);
-	margin-right: 10px;
+	padding-right: 3rem;
 	ul {
 		list-style: none;
 		padding: 0;
@@ -61,6 +68,9 @@
 			color: $darkGrey;
 			font-size: 14px;
 			text-decoration: none;
+			&:hover {
+				color: $lightGrey;
+			}
 		}
 	}
 }
@@ -74,21 +84,16 @@ ul.instagramGallery {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
-	justify-content: flex-start;
+	justify-content: space-between;
+	align-content: space-between;
 	margin-right: 0;
 	li {
 		list-style: none;
-		margin: 0;
+		margin: 0 0 0.75rem 0;
 		flex: 0 1 30%;
-		&:last-child {
-			margin-right: 0;
-		}
 		img {
-			max-width: 100%;
+			width: 100%;
 		}
-	}
-	li:nth-child(3n) {
-		// margin: 0;
 	}
 }
 
@@ -107,8 +112,6 @@ ul.paymentOptions {
 		font-size: 24px;
 	}
 }
-
-
 
 // FOOTER
 

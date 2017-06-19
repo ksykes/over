@@ -22,7 +22,6 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 	}
-
 }
 
 .navLinks .hamburger {
@@ -35,7 +34,7 @@ nav {
 	width: 33.3%;
 	padding: 0;
 	li {
-		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
@@ -44,12 +43,12 @@ nav {
 	margin-left: 40px;
 }
 
-.navLinks li:first-child {
-	// display: none;
-}
-
 .navFunctions {
 	justify-content: flex-end;
+}
+
+.hamburgerLinks {
+	// display: none;
 }
 
 .logo {
@@ -72,26 +71,5 @@ nav {
 		font-size: 16px;
 		text-transform: uppercase;
 		text-align: center;
-	}
-}
-
-// BUTTONS
-.headerButtons {
-	position: absolute;
-	bottom: 15px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-content: center;
-	width: 10%;
-}
-
-.sliderNavButtons {
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background-color: #141122;
-	&:hover {
-		background-color: #88868F;
 	}
 }

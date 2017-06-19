@@ -15,6 +15,20 @@
 				<ul class="navLinks">
 					<li class="hamburger">
 						<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+						<ul class="hamburgerLinks">
+							<li>
+								<a href="#welcome">Welcome</a>
+							</li>
+							<li>
+								<a href="#products">Products</a>
+							</li>
+							<li>
+								<a href="#testimonials">Testimonials</a>
+							</li>
+							<li>
+								<a href="#blog">Blog</a>
+							</li>
+						</ul>
 					</li>
 					<li class="navItems">
 						<a href="#welcome">Welcome</a>
@@ -49,12 +63,6 @@
 				<p>Shop Now</p>
 			</button>
 		</div>
-		<div class="headerButtons">
-			<div class="sliderNavButtons"></div>
-			<div class="sliderNavButtons"></div>
-			<div class="sliderNavButtons"></div>
-			<div class="sliderNavButtons"></div>
-		</div>
 	</header>
 
 	<!-- INTRODUCTION -->
@@ -69,34 +77,34 @@
 			<div class="gallery">
 				<div class="introImage introImageGroup1">
 					<img src="assets/images/homeSection/annie-spratt-79272.jpg" alt="">
-					<div class="introGalleryText">
+					<button class="introGalleryText">
 						<p>Air Plants</p>
 						<p>12 items</p>
-					</div>
+					</button>
 				</div>
 				<div class="introImageGroup2">
 					<div class="introImageGroup3">
 						<div class="introImage">
 							<img src="assets/images/homeSection/alex-rodriguez-santibanez-200278.jpg" alt="">
-							<div class="introGalleryText">
+							<button class="introGalleryText">
 								<p>Office Plants</p>
 								<p>38 items</p>
-							</div>
+							</button>
 						</div>
 						<div class="introImage">
 							<img src="assets/images/homeSection/connor-betts-187536.jpg" alt="">
-							<div class="introGalleryText">
+							<button class="introGalleryText">
 								<p>House Plants</p>
 								<p>21 items</p>
-							</div>
+							</button>
 						</div>
 					</div>
 					<div class="introImage introImageGroup4">
 						<img src="assets/images/homeSection/square__01.jpg" alt="">
-						<div class="introGalleryText">
+						<button class="introGalleryText">
 							<p>Plant Containers</p>
 							<p>07 items</p>
-						</div>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -238,12 +246,6 @@
 				<img src="assets/images/quotation.png" alt="">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur a temporibus est assumenda fuga quod libero aliquid eum debitis deleniti quas, soluta, voluptates sed harum dignissimos perspiciatis, dolorum pariatur possimus?</p>
 				<p class="customer"><span class="customerName">Rosinante Brook</span> Web Design</p>
-				<div class="videoButtons">
-					<div class="testimonialSliderButtons"></div>
-					<div class="testimonialSliderButtons"></div>
-					<div class="testimonialSliderButtons"></div>
-					<div class="testimonialSliderButtons"></div>
-				</div>
 			</div>
 		</div>
 		<div class="video">
@@ -266,19 +268,19 @@
 					<img src="assets/images/blog/chuttersnap-198430.jpg" alt="">
 					<p>December 14, 2017</p>
 					<h6>How to Wear Fishnets Like a Street Style Superstar</h6>
-					<p class="readMore">Read More</p>
+					<a href="" class="readMore">Read More</a>
 				</li>
 				<li class="blogGalleryItems">
 					<img src="assets/images/blog/sarah-dorweiler-123483.jpg" alt="">
 					<p>December 14, 2017</p>
 					<h6>How to Wear Fishnets Like a Street Style Superstar</h6>
-					<p class="readMore">Read More</p>
+					<a href="" class="readMore">Read More</a>
 				</li>
 				<li class="blogGalleryItems">
 					<img src="assets/images/blog/sylwia-pietruszka-218363.jpg" alt="">
 					<p>December 14, 2017</p>
 					<h6>How to Wear Fishnets Like a Street Style Superstar</h6>
-					<p class="readMore">Read More</p>
+					<a href="" class="readMore">Read More</a>
 				</li>
 			</ul>
 		</div>
@@ -342,11 +344,31 @@
 					<li class="contactInfoItem"><span class="bold">Skype</span> doodlelys</li>
 				</ul>
 				<ul class="socialLinks">
-					<li class="socialLinksItem"><i class="fa fa-facebook" aria-hidden="true"></i></li>
-					<li class="socialLinksItem"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-					<li class="socialLinksItem"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-					<li class="socialLinksItem"><i class="fa fa-instagram" aria-hidden="true"></i></li>
-					<li class="socialLinksItem"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+					<li class="socialLinksItem">
+						<a href="#">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="socialLinksItem">
+						<a href="#">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="socialLinksItem">
+						<a href="#">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="socialLinksItem">
+						<a href="#">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="socialLinksItem">
+						<a href="#">
+							<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="services">
@@ -421,5 +443,7 @@
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 <script src="https://use.fontawesome.com/f5174b09e5.js"></script>
 </html>

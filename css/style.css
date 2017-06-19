@@ -371,7 +371,7 @@ nav {
   width: 33.3%;
   padding: 0; }
   .navLinks li, .logo li, .navFunctions li {
-    margin-left: 20px; }
+    margin-right: 20px; }
 
 .navLinks li {
   margin-right: 0;
@@ -411,31 +411,6 @@ nav {
     text-transform: uppercase;
     text-align: center; }
 
-.headerButtons {
-  position: absolute;
-  bottom: 15px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  width: 10%; }
-
-.sliderNavButtons {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #141122; }
-  .sliderNavButtons:hover {
-    background-color: #88868F; }
-
 .intro {
   margin-top: 115px; }
 
@@ -443,6 +418,9 @@ nav {
   background: url(../assets/images/plantBackground.png);
   background-position: top;
   background-repeat: no-repeat; }
+
+.gallery img {
+  display: block; }
 
 .introImage {
   position: relative; }
@@ -453,7 +431,7 @@ nav {
     font-size: 14px;
     line-height: 16px; }
   .introImage img {
-    max-width: 100%;
+    width: 100%;
     overflow: hidden; }
 
 .introGalleryText {
@@ -465,6 +443,10 @@ nav {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+  .introGalleryText:hover {
+    background: #79dad6;
+    border: 2px solid #888890;
+    color: #fff; }
 
 .gallery {
   width: 100%;
@@ -492,7 +474,22 @@ nav {
 
 .introImageGroup2 {
   width: calc(60% - 2%);
-  overflow: hidden; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
 
 .introImageGroup3 {
   width: calc(100%);
@@ -500,7 +497,13 @@ nav {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
   .introImageGroup3 .introImage {
     margin-bottom: 1%; }
     .introImageGroup3 .introImage:first-child {
@@ -558,6 +561,12 @@ nav {
   background: rgba(26, 26, 38, 0.5);
   z-index: 5;
   display: none; }
+  .overlay p {
+    border: 1.5px solid white; }
+    .overlay p:hover {
+      border: 1.5px solid #1E1E2A;
+      color: black;
+      background: #79dad6; }
 
 .imageOverlay {
   position: relative; }
@@ -596,11 +605,29 @@ nav {
   display: flex; }
 
 .testimonials, .video {
-  width: 50%; }
+  width: 50%;
+  padding: 2rem; }
 
 .testimonials {
   background: url("../assets/images/ShapeBG.png");
   background-size: cover; }
+  .testimonials .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
   .testimonials h3 {
     padding-top: 98px; }
   .testimonials img {
@@ -618,26 +645,6 @@ nav {
 
 .testimonials .wrapper {
   position: relative; }
-
-.videoButtons {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 30%; }
 
 .testimonialSliderButtons {
   width: 40px;
@@ -692,15 +699,19 @@ ul.blogGallery {
   margin-right: 15px; }
   .blogGalleryItems:last-child {
     margin-right: 0; }
-  .blogGalleryItems p {
+  .blogGalleryItems p, .blogGalleryItems a {
     color: #888890;
     font-size: 14px;
     margin: 20px 0 0 0; }
-  .blogGalleryItems p.readMore {
+  .blogGalleryItems a.readMore {
     color: #1E1E2A;
     border-bottom: 1px solid #1E1E2A;
     display: inline-block;
-    margin: 30px 0 0 0; }
+    margin: 30px 0 0 0;
+    text-decoration: none; }
+    .blogGalleryItems a.readMore:hover {
+      color: #888890;
+      border-bottom: none; }
   .blogGalleryItems h6 {
     font-size: 18px;
     font-weight: 500;
@@ -819,11 +830,17 @@ button {
 
 .socialLinks li {
   display: inline-block;
-  font-size: 24px; }
+  font-size: 24px;
+  padding-right: 1.5rem; }
+  .socialLinks li a {
+    color: black;
+    text-decoration: none; }
+    .socialLinks li a:hover {
+      color: #888890; }
 
 .services, .account {
   width: calc(15% - 20px);
-  margin-right: 10px; }
+  padding-right: 3rem; }
   .services ul, .account ul {
     list-style: none;
     padding: 0; }
@@ -831,6 +848,8 @@ button {
       color: #1E1E2A;
       font-size: 14px;
       text-decoration: none; }
+      .services ul a:hover, .account ul a:hover {
+        color: #888890; }
 
 .instagram {
   width: 30%; }
@@ -844,22 +863,23 @@ ul.instagramGallery {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   margin-right: 0; }
   ul.instagramGallery li {
     list-style: none;
-    margin: 0;
+    margin: 0 0 0.75rem 0;
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 30%;
     -ms-flex: 0 1 30%;
     flex: 0 1 30%; }
-    ul.instagramGallery li:last-child {
-      margin-right: 0; }
     ul.instagramGallery li img {
-      max-width: 100%; }
+      width: 100%; }
 
 ul.paymentOptions {
   width: 100%; }
@@ -909,15 +929,32 @@ body {
   height: 2px; }
 
 @media (max-width: 1170px) {
-  body {
-    background: red; }
   .wrapper {
     margin: 0 50px; }
   .navItems {
     display: none; }
   .navLinks .hamburger {
     display: block;
-    margin-left: 0; }
+    margin-left: 0;
+    position: relative;
+    cursor: pointer; }
+  .hamburgerLinks {
+    position: absolute;
+    display: block;
+    padding: 1rem 2rem;
+    margin: 0;
+    width: 10rem;
+    background: white; }
+    .hamburgerLinks li {
+      list-style: none;
+      margin: 0; }
+  .turnHamburger {
+    -webkit-transition: 0.5s, 0.5s, 0.5s, 0.5s;
+    -o-transition: 0.5s, 0.5s, 0.5s, 0.5s;
+    transition: 0.5s, 0.5s, 0.5s, 0.5s;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
   .sponsorLogo {
     margin-right: 40px; }
   .subNav h5 {
@@ -931,21 +968,38 @@ body {
   .testimonialsVideoSection {
     display: block; }
   .testimonials, .video {
+    width: 100%; }
+  .companyInfo {
+    margin-right: 0;
+    margin-bottom: 3rem;
+    padding-right: 2rem;
+    width: calc(50% - 20px);
+    border-right: 2px solid #e6e5e1; }
+  .services, .account {
+    width: calc(25% - 20px);
+    padding-left: 2rem; }
+  .instagram {
     width: 100%; } }
 
 @media (max-width: 768px) {
-  body {
-    background: green; }
   .navItems {
     display: none; }
   .hamburger {
     display: block; }
   .companyInfo {
-    width: 100%; }
+    width: 100%;
+    padding-right: 0;
+    border: none; }
   .services, .account {
-    width: calc(50% - 10px); }
-  .instagram {
-    width: 100%; }
+    width: calc(50% - 10px);
+    padding-left: 0;
+    margin-bottom: 3rem; }
+  .footerContent {
+    display: block; }
+    .footerContent p {
+      width: 100%; }
+      .footerContent p:last-child {
+        text-align: left; }
   .introImage p:nth-child(1) {
     font-size: 16px;
     line-height: 18px; }
@@ -961,7 +1015,8 @@ body {
     width: 100%;
     height: 258px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    margin-right: 0; }
     .introImageGroup1 img {
       position: absolute;
       bottom: -210px;
@@ -992,8 +1047,6 @@ body {
     font-size: 16px; } }
 
 @media (max-width: 480px) {
-  body {
-    background: blue; }
   .wrapper {
     margin: 0 5%; }
   h3 {
@@ -1070,7 +1123,7 @@ body {
     margin: 15px 0; }
   .services, .account {
     text-align: center;
-    margin-bottom: 15px; }
+    padding-right: 0; }
   .servicesList, .accountList {
     display: none;
     text-align: center; }

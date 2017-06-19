@@ -15,16 +15,21 @@ ul.blogGallery {
 	&:last-child {
 		margin-right: 0;
 	}
-	p {
+	p, a {
 		color: $lightGrey;
 		font-size: 14px;
 		margin: 20px 0 0 0;
 	}
-	p.readMore {
+	a.readMore {
 		color: $darkGrey;
 		border-bottom: 1px solid $darkGrey;
 		display: inline-block;
 		margin: 30px 0 0 0;
+		text-decoration: none;
+		&:hover {
+			color: $lightGrey;
+			border-bottom: none;
+		}
 	}
 	h6 {
 		font-size: 18px;

@@ -89,7 +89,6 @@ nav a {
 .introText {
 	h6 {
 		color: $mintGreen;
-		// line-height: 60px;
 		text-align: center;
 		margin: 0;
 	}
@@ -172,7 +171,6 @@ p.galleryItemOriginalPrice {
 	text-decoration: line-through;
 	font-size: 14px;
 	display: inline;
-	// margin-left: 15px;
 }
 
 .overlay {
@@ -186,7 +184,6 @@ p.galleryItemOriginalPrice {
 	text-transform: uppercase;
 	padding: 15px 20px;
 	background: #fff;
-	// display: inline;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);

@@ -5,13 +5,18 @@
 
 .testimonials, .video {
 	width: 50%;
-	// float: left;
-	// padding: 10% 120px;
+	padding: 2rem;
 }
 
 .testimonials {
 	background: url("../assets/images/ShapeBG.png");
 	background-size: cover;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
 	h3 {
 		padding-top: 98px;
 	}
@@ -39,19 +44,6 @@
 	position: relative;
 }
 
-.videoButtons {
-	position: absolute;
-	bottom: 15px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	// align-content: center;
-	align-items: center;
-	width: 30%;
-}
-
 .testimonialSliderButtons {
 	width: 40px;
 	height: 40px;
@@ -68,9 +60,9 @@
 // VIDEO
 
 .video {
-	background: 
+	background:
 		linear-gradient(
-			rgba(26, 26, 38, 0.5), 
+			rgba(26, 26, 38, 0.5),
 			rgba(26, 26, 38, 0.5)
 		),
 		url("../assets/images/videoPlaceholder.jpg");
